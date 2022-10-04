@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coffee Masters</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -13,21 +14,21 @@
         <h1 class="brand-name">Coffee Masters</h1>
     </header>
     <div class="main-page">
-        <section class="order-items">
+        <section class="order-items box">
             <h2 class="box-title">ITEMS</h2>
             <ul class="items">
                 <li class="item">
                     <div class="item-quantity">1x</div>
-                    <div class="item-name">Cappucino</div>
-                    <div class="item-price">$6.00</div>
+                    <div class="item-name bold-font">Cappucino</div>
+                    <div class="item-price bold-font">$6.00</div>
                     <ul class="item-options">
                         <li class="item-option">Light Foam</li>
                     </ul>
                 </li>
                 <li class="item">
                     <div class="item-quantity">1x</div>
-                    <div class="item-name">Cappucino</div>
-                    <div class="item-price">$7.90</div>
+                    <div class="item-name bold-font">Cappucino</div>
+                    <div class="item-price bold-font">$7.90</div>
                     <ul class="item-options">
                         <li class="item-option">Almond Milk</li>
                         <li class="item-option">Double Espresso Shot</li>
@@ -35,34 +36,34 @@
                 </li>
                 <li class="item">
                     <div class="item-quantity">1x</div>
-                    <div class="item-name">Croissant</div>
-                    <div class="item-price">$5.37</div>
+                    <div class="item-name bold-font">Croissant</div>
+                    <div class="item-price bold-font">$5.37</div>
                     <ul class="item-options">
                         <li class="item-option">Butter</li>
                     </ul>
                 </li>
             </ul>
         </section>
-        <section class="order-info">
-            <div class="order-name">
-                <h2 class="box-title">NAME</h2>
-                <div class="input-group">
-                    <label class="user-input-label" for="name">Name for order</label>
-                    <input type="text" class="user-input" id="name">
-                </div>
-            </div>
-            <div class="order-payment">
-                <h2 class="box-title">PAYMENT</h2>
-                <div class="input-group">
-                    <label class="user-input-label" for="cn">Card number</label>
-                    <input type="text" class="user-input" id="cn">
-                </div>
-                <div class="input-group">
-                    <label class="user-input-label" for="ccv">CCV number</label>
-                    <input type="text" class="user-input" id="ccv">
-                </div>
+
+        <section class="order-name box">
+            <h2 class="box-title">NAME</h2>
+            <div class="input-group">
+                <label class="user-input-label" for="name">Name for order</label>
+                <input type="text" class="user-input" id="name">
             </div>
         </section>
+        <section class="order-payment box">
+            <h2 class="box-title">PAYMENT</h2>
+            <div class="input-group">
+                <label class="user-input-label" for="cn">Card number</label>
+                <input type="text" class="user-input" id="cn">
+            </div>
+            <div class="input-group">
+                <label class="user-input-label" for="ccv">CCV number</label>
+                <input type="text" class="user-input user-input-small" id="ccv">
+            </div>
+        </section>
+
         <section class="total">
             <table class="total-table">
                 <tbody>
@@ -81,7 +82,7 @@
                 </tbody>
             </table>
         </section>
-        <button class="place-order" type="button">Place order</button>
+        <button class="place-order-button" type="button">Place order</button>
     </div>
 </body>
 
